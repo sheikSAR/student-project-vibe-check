@@ -2,7 +2,7 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { cn } from '@/lib/utils';
-import { Home, Search, BookOpen, Users, Star } from 'lucide-react';
+import { Home, Search, BookOpen, Users, Star, Car } from 'lucide-react';
 
 interface NavigationProps {
   variant?: 'horizontal' | 'vertical';
@@ -31,6 +31,11 @@ const Navigation: React.FC<NavigationProps> = ({
       title: 'Projects',
       href: '/projects',
       icon: <BookOpen className="h-4 w-4" />
+    },
+    {
+      title: 'Vehicle Analyzer',
+      href: '/vehicle-analyzer',
+      icon: <Car className="h-4 w-4" />
     },
     {
       title: 'Discover',

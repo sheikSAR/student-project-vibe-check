@@ -11,6 +11,8 @@ import Projects from "./pages/Projects";
 import ProjectDetails from "./pages/ProjectDetails";
 import Admin from "./pages/Admin";
 import { ProjectProvider } from "./hooks/use-projects";
+import VehicleAnalyzer from "./pages/VehicleAnalyzer";
+import AnalysisReport from "./pages/AnalysisReport";
 
 const queryClient = new QueryClient();
 
@@ -29,6 +31,8 @@ const App = () => (
                 <Route path="/projects" element={<Projects />} />
                 <Route path="/projects/:id" element={<ProjectDetails />} />
                 <Route path="/admin" element={<Admin />} />
+                <Route path="/vehicle-analyzer" element={<VehicleAnalyzer />} />
+                <Route path="/analysis-report/:id" element={<AnalysisReport />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>
             </main>
