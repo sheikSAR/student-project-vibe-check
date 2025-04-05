@@ -2,7 +2,7 @@
 import React, { useState, useCallback } from 'react';
 import { useDropzone } from 'react-dropzone';
 import { Button } from '@/components/ui/button';
-import { Upload, X, Image, Info, ArrowRight } from 'lucide-react';
+import { Upload, X, Image, Info } from 'lucide-react';
 import { toast } from 'sonner';
 import { motion } from 'framer-motion';
 
