@@ -2,7 +2,7 @@
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { AlertCircle, Tool, Car, Gavel } from 'lucide-react';
+import { AlertCircle, Wrench, Car, Gavel } from 'lucide-react';
 
 interface VehicleIssuesCardProps {
   issues: {
@@ -40,7 +40,7 @@ const VehicleIssuesCard: React.FC<VehicleIssuesCardProps> = ({ issues }) => {
     { 
       id: 'mechanical',
       name: 'Mechanical',
-      icon: <Tool className="h-4 w-4" />,
+      icon: <Wrench className="h-4 w-4" />,
       items: issues.mechanical,
       color: 'text-amber-500',
       listStyle: 'list-square',
